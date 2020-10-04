@@ -1,2 +1,2 @@
 # Personal Portfolio Project
-## REACT-application
+Built with React
