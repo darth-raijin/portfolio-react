@@ -3,12 +3,13 @@
 // Import a Google Font
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
 
-// Set your brand colors
-$dark-purple: #8A4D76;
-$light-purple: #BD86F1;
+// Main color scheme
+$dark-purple: #974BDE;
+$light-purple: #AB82DE;
+$accent-yellow: #FCF300;
+$dark-mode: #171717;
 
-
-// Update Bulma's global variables
+// Bulma global variables
 $family-sans-serif: "Roboto", sans-serif;
 $grey-dark: $dark-purple;
 $grey-light: $light-purple;
@@ -18,14 +19,19 @@ $widescreen-enabled: false;
 $fullhd-enabled: false;
 
 
-// Update some of Bulma's component variables
-
-$body-background-color: #171717;
+// Bulma component variables
+$background: $dark-mode;
+$body-background-color: $dark-mode;
 $control-border-width: 2px;
 $input-border-color: transparent;
 $input-shadow: none;
 
-// Import only what you need from Bulma
+// Navbar customizations
+$navbar-background-color: transparent;
+$navbar-item-hover-background-color: transparent;
+$navbar-item-hover-color: $accent-yellow;
+
+// Bulma import
 @import "../node_modules/bulma/sass/utilities/_all.sass";
 @import "../node_modules/bulma/sass/base/_all.sass";
 @import "../node_modules/bulma/sass/elements/button.sass";
