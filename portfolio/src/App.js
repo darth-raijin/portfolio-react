@@ -20,8 +20,8 @@ function App() {
       {
     <nav className='navbar' role='navigation' aria-label='main navigation'>
       <div className='navbar-brand'>
-        <a href='/' className='navbar-item'>
-        <img src={logo} width="112" height="28" />
+        <a href='/home' className='navbar-item'>
+        <img src={logo} width="112" height="28" alt="portfolio-logo" />
         </a>
 
         <a
@@ -29,14 +29,14 @@ function App() {
           className={'navbar-burger burger'}
           aria-label='menu'
           aria-expanded='false'
-          data-target='navbarBasicExample'
+          data-target='navbar'
         >
           <span aria-hidden='true'></span>
           <span aria-hidden='true'></span>
           <span aria-hidden='true'></span>
         </a>
       </div>
-      <div id='navbarBasicExample' className='navbar-menu'>
+      <div id='navbar' className='navbar-menu'>
         <div className='navbar-end'>
         <Link to="/home" className="navbar-item">
               Home
@@ -71,6 +71,9 @@ function App() {
       <Route exact path="/contact" component={Contact} />
     </BrowserRouter>
   );
+}
+
+function Test() {return
 }
 
 export default App;
