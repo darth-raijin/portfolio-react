@@ -1,5 +1,6 @@
 import React from "react";
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faLaptopCode } from '@fortawesome/free-solid-svg-icons'
 
 
 const Navbar = () => {
@@ -12,7 +13,7 @@ const Navbar = () => {
           >
             <div className="navbar-brand">
               <a href="/home" className="navbar-item">
-                <img src="https://www.google.com/url?sa=i&url=http%3A%2F%2Fclipart-library.com%2Ffree%2Ffacebook-icon-transparent-background.html&psig=AOvVaw2S7WFAtHfHMXsy4bNb2hcK&ust=1608899333409000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCLDl2J_P5u0CFQAAAAAdAAAAABAp" width="112" height="28" alt="portfolio-logo" />
+                <FontAwesomeIcon icon={ faLaptopCode } width="112" height="28" alt="portfolio-logo" color="white" />
               </a>
 
               <a
