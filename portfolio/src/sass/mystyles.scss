@@ -31,6 +31,24 @@ $navbar-background-color: transparent;
 $navbar-item-hover-background-color: transparent;
 $navbar-item-hover-color: $accent-yellow;
 
+#icon-text {
+    font-size: 20px;
+    display: inline-block;
+    padding: 5px;
+    
+}
+
+#icon {
+    size: "m";
+}
+
+#logo-icon {
+    height: auto;
+    width: auto;
+    max-height: 46px;
+    max-width: 52px;
+}
+
 // Bulma import
 @import "../node_modules/bulma/sass/utilities/_all.sass";
 @import "../node_modules/bulma/sass/base/_all.sass";

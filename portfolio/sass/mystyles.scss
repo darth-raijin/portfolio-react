@@ -6,6 +6,7 @@
 // Set your brand colors
 $dark-purple: #8A4D76;
 $light-purple: #BD86F1;
+$icon-color: blue;
 
 
 // Update Bulma's global variables
@@ -18,6 +19,8 @@ $widescreen-enabled: false;
 $fullhd-enabled: false;
 
 
+// CHECK OTHER FILE
+
 // Update some of Bulma's component variables
 
 $body-background-color: #171717;
@@ -25,6 +28,28 @@ $control-border-width: 2px;
 $input-border-color: transparent;
 $input-shadow: none;
 
+// Icons
+
+#icon {
+    color: blue;
+    padding: 3px 10px;
+}
+#text {
+    color: red;
+    padding: 10 px;
+}
+
+#icon::after {
+    color: #8A4D76;
+    }
+
+.icon-text {
+    margin: 50cm;
+}
+
+#icon-text {
+    padding: 5px;
+}
 // Import only what you need from Bulma
 @import "../node_modules/bulma/sass/utilities/_all.sass";
 @import "../node_modules/bulma/sass/base/_all.sass";
