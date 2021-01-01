@@ -17,7 +17,7 @@ export default function Navbar() {
       <BrowserRouter>
         <nav className="navbar" role="navigation" aria-label="main navigation">
           <div className="navbar-brand">
-            <a href="/home" className="navbar-item">
+            <a href="/" className="navbar-item">
               <FontAwesomeIcon
                 icon={faFireExtinguisher}
                 alt="portfolio-logo"

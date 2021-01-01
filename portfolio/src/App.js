@@ -13,6 +13,7 @@ function App() {
   return (
     <div>
       <Navbar/>
+      <h1>ting go brr</h1>
     </div>
   );
 }
