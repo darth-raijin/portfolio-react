@@ -3,11 +3,11 @@ import { Link, BrowserRouter, Route } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFireExtinguisher, faHome, faAddressCard, faTasks, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
-import About from "../../About.js";
-import Projects from "../../Projects.js";
-import Contact from "../../Contact.js";
+import About from "../About.js";
+import Projects from "../Projects.js";
+import Contact from "../Contact.js";
 
-import "../../sass/mystyles.scss";
+import "../sass/mystyles.scss";
 
 export default function Navbar() {
   const [isActive, setisActive] = React.useState(false);
@@ -20,7 +20,6 @@ export default function Navbar() {
             <a href="/home" className="navbar-item">
               <FontAwesomeIcon
                 icon={faFireExtinguisher}
-                size = "1em"
                 alt="portfolio-logo"
                 id = "logo-icon"
               />
