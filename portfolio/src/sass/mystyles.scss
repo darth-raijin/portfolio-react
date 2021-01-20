@@ -8,7 +8,7 @@ $dark-purple: #974BDE;
 $light-purple: #AB82DE;
 $accent-yellow: #FCF300;
 $dark-mode: #171717;
-$accedsadsant-yellow: #FCF300;
+
 
 // Bulma global variables
 $family-sans-serif: "Roboto", sans-serif;
@@ -30,33 +30,49 @@ $input-shadow: none;
 // Navbar customizations
 $navbar-background-color: transparent;
 $navbar-item-hover-background-color: transparent;
-$navbar-item-hover-color: $accent-yellow;
+$navbar-item-hover-color: $link;
+$navbar-burger-color: $link;
+$text: #fff;
+
+// Hero
+$title-color: #fff;
+$title-hover-color: $accent-yellow;
+$subtitle-color: $link;
+
+// footer
+$footer-background-color: transparent;
+
+#portfolio-text:hover {
+    color: $link;
+}
 
 #icon-text {
     font-size: 20px;
     display: inline-block;
     padding: 5px;
+    font-weight: regular;
     
 }
 
-#icon {
-    size: "m";
+#bottom-foot {
+    display: block;
 }
 
-#logo-icon {
-    height: auto;
-    width: auto;
-    max-height: 46px;
-    max-width: 52px;
+#hr-line {
+    border-top: 1px solid white;
 }
 
 // Bulma import
 @import "../node_modules/bulma/sass/utilities/_all.sass";
 @import "../node_modules/bulma/sass/base/_all.sass";
+@import "../node_modules/bulma/sass/layout/footer.sass";
+@import "../node_modules/bulma/sass/helpers/typography.sass";
 @import "../node_modules/bulma/sass/elements/button.sass";
 @import "../node_modules/bulma/sass/elements/container.sass";
 @import "../node_modules/bulma/sass/elements/title.sass";
 @import "../node_modules/bulma/sass/form/_all.sass";
 @import "../node_modules/bulma/sass/components/navbar.sass";
+@import "../node_modules/bulma/sass/grid/_all.sass";
+@import "../node_modules/bulma/sass/grid/columns.sass";
 @import "../node_modules/bulma/sass/layout/hero.sass";
 @import "../node_modules/bulma/sass/layout/section.sass";

@@ -1,7 +1,7 @@
 import React from "react"
-import logo from './logo.svg';
 import './css/mystyles.css';
- 
+
+
 function About(props) {
   document.title = "About"
   return (
@@ -10,5 +10,5 @@ function About(props) {
     </div>
   )
 }
- 
+
 export default About;
