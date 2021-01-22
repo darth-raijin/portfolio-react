@@ -9,8 +9,16 @@ export class Footer extends Component {
             <div>
                 <footer class="footer">
                     <div class="content has-text-centered">
+                    <img src={process.env.PUBLIC_URL + '/favicon.ico'} class = "slogan-logo" />
                         <p>
-                            <h1 class="subtitle">Owned and Developed by Mohamed Macow</h1>
+                            <section class="section">
+                                    <p class="slogan has-text-left">
+                                    Change is inevitable. Growth is optional.  
+                                    </p>
+                                    
+                                <p class="slogan-ownership has-text-left">Owned and Developed by Mohamed Macow</p>
+                            </section>
+                            
                             <Socials></Socials>
                             <hr id ="hr-line"/>
                             <br/>
