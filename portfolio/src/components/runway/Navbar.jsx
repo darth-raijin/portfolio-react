@@ -16,7 +16,9 @@ export default function Navbar() {
         <nav className="navbar" role="navigation" aria-label="main navigation">
           <div className="navbar-brand">
             <a href="/" className="navbar-item">
-              <h1 class="title is-3" id="portfolio-text" >portfolio</h1>
+              <h1 class="title is-3" id="portfolio-text">
+                portfolio
+              </h1>
             </a>
 
             <a
@@ -39,15 +41,21 @@ export default function Navbar() {
             className={`navbar-menu ${isActive ? "is-active" : ""}`}
           >
             <div className="navbar-end">
-              <Link to="/" className="navbar-item">
-                <h1 id="icon-text">Home</h1>
-              </Link>
-              <Link to="/about" className="navbar-item" id="link">
-                <h1 id="icon-text">About</h1>
-              </Link>
-              <Link to="/contact" className="navbar-item" id="link">
-                <h1 id="icon-text">Contact</h1>
-              </Link>
+              <nav class="menu menu--dustu">
+                <Link to="/" className="navbar-item menu__item">
+                  <span class="menu__item-name">Home</span>
+                </Link>
+                <Link to="/about" className="navbar-item menu__item" id="link">
+                  <span class="menu__item-name">About</span>
+                </Link>
+                <Link
+                  to="/contact"
+                  className="navbar-item menu__item"
+                  id="link"
+                >
+                  <span class="menu__item-name">Contact</span>
+                </Link>
+              </nav>
             </div>
           </div>
         </nav>

@@ -92,23 +92,55 @@ $button-hover-border-color: transparent;
     width: 140px;
 }
 
-.icon-text::before, .icon-text::after {
+.menu--dustu .menu__item {
+    display: inline-block
+}
+
+.menu--dustu .menu__item-name {
+    font-size: 20px;
+    display: inline-block;
+    padding: 5px;
+    font-weight: regular;
+}
+
+
+
+.menu__item-name,.menu__item-label {
+    position: relative;
+    display: inline-block
+}
+
+.menu--dustu .menu__item-name {
+
+    overflow: hidden;
+    padding: 0 .25em;
+}
+
+.menu--dustu .menu__item-name:before,.menu--dustu .menu__item-name:after {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: #eb2141;
+    background: $button-hover;
     transform: translate3d(-100%,0,0) translate3d(-1px,0,0);
     transition: transform .7s;
     transition-timing-function: cubic-bezier(.7,0,.3,1);
 }
-.icon-text::after {
-    top: calc(50% - 2px);
-    height: 4px;
+
+.menu--dustu .menu__item:hover .menu__item-name:before,.menu--dustu .menu__item.hover .menu__item-name:before {
+    transform: translate3d(100%,0,0) translate3d(1px,0,0)
 }
 
+.menu--dustu .menu__item:hover .menu__item-name:after,.menu--dustu .menu__item.hover .menu__item-name:after {
+    transform: translate3d(0,0,0)
+}
+
+.menu--dustu .menu__item-name:after {
+    top: calc(50% - 2px);
+    height: 4px
+}
 
 // Bulma import
 @import "../node_modules/bulma/sass/utilities/_all.sass";
