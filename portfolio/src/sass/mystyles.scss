@@ -1,17 +1,18 @@
 @charset "utf-8";
 
 // Import a Google Font
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500&display=swap");
 
 // Main color scheme
 $dark-purple: #974bde;
 $light-purple: #ab82de;
 $accent-yellow: #fcf300;
 $dark-mode: #171717;
+$lighter-dark: #323232;
 $button-hover: #fff;
 
 // Bulma global variables
-$family-sans-serif: "Roboto", sans-serif;
+$family-sans-serif: "Montserrat", sans-serif;
 $grey-dark: $dark-purple;
 $grey-light: $light-purple;
 $primary: $dark-purple;
@@ -45,6 +46,65 @@ $button-background-color: $dark-mode;
 $button-color: $link;
 $button-border-color: transparent;
 $button-hover-border-color: transparent;
+
+$input-background-color: $lighter-dark;
+$input-color: #fff;
+
+.glow-on-hover {
+    color: #fff;
+    background: $accent-yellow;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #000
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: $dark-purple;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
 
 #portfolio-text:hover {
     color: $link;
@@ -103,7 +163,9 @@ $button-hover-border-color: transparent;
     font-weight: regular;
 }
 
-
+#yellow-icon {
+    color: $accent-yellow;
+}
 
 .menu__item-name,.menu__item-label {
     position: relative;
@@ -140,6 +202,10 @@ $button-hover-border-color: transparent;
 .menu--dustu .menu__item-name:after {
     top: calc(50% - 2px);
     height: 4px
+}
+
+#about-icon {
+    color:$accent-yellow;
 }
 
 // Bulma import

@@ -16,8 +16,8 @@ export default function Navbar() {
         <nav className="navbar" role="navigation" aria-label="main navigation">
           <div className="navbar-brand">
             <a href="/" className="navbar-item">
-              <h1 class="title is-3" id="portfolio-text">
-                portfolio
+              <h1 class="title is-5" id="portfolio-text">
+                MOHAMED MACOW
               </h1>
             </a>
 
