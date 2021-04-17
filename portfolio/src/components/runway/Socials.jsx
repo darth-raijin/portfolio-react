@@ -11,9 +11,8 @@ export class Socials extends Component {
     render() {
         return (
             <div>
-                <footer class="footer">
+                
                     <div class="content has-text-centered">
-                        <p>
                             <div class="columns">
                                 <div class="column">
                                     <span class="icon is-large">
@@ -39,9 +38,9 @@ export class Socials extends Component {
                                     
                                 </div>
                             </div>
-                        </p>
+
                     </div>
-                </footer>
+
             </div>
         );
     }

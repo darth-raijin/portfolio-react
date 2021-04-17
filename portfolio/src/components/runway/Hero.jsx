@@ -12,7 +12,7 @@ export class Hero extends Component {
               <h2 class="subtitle is-3">Hello, my name is</h2>
               <h1 class="title is-1">Mohamed Macow.</h1>
               <h3 class="subtitle">I'm a design-minded software engineer <br/> focused on building beautiful interfaces.</h3>
-              <button class="button is-link glow-on-hover">Learn more about me!</button>
+              <a href="/about"><button class="button is-link glow-on-hover">Learn more about me!</button></a>
             </div>
           </div>
         </section>

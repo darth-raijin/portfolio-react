@@ -16,7 +16,7 @@ function About(props) {
           </a>
           <br />
           I love a challenge - whether it is related to personal development, or
-          working out the bugs of a web application. An important element of my
+          working on a project. An important part of my
           toolbox is my eye for captivating UI and the ability to produce
           graphic content.
           <br />
@@ -26,7 +26,7 @@ function About(props) {
           <div class="columns">
             <div class="column">
               <ul>
-                <li><i id="yellow-icon" class="fas fa-caret-right"/> Integriy</li>
+                <li><i id="yellow-icon" class="fas fa-caret-right"/> Integrity</li>
                 <li><i id="yellow-icon" class="fas fa-caret-right"/> Personal development</li>
                 <li><i id="yellow-icon" class="fas fa-caret-right"/> Freedom</li>
               </ul>
